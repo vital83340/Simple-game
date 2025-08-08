@@ -1,39 +1,37 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover" />
-    <title>Tap the Dot</title>
-    <meta name="theme-color" content="#0f172a" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="app">
-      <header class="top-bar">
-        <div class="stat">
-          <span class="label">Score</span>
-          <span class="value" id="score">0</span>
-        </div>
-        <div class="stat">
-          <span class="label">Time</span>
-          <span class="value" id="time">30</span>
-        </div>
-      </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tap the Dot</title>
+  <!-- chemins corrigés vers le dossier tap-the-dot -->
+  <link rel="stylesheet" href="tap-the-dot/styles.css">
+</head>
+<body>
+  <div id="app">
+    <header class="top-bar">
+      <div class="stat">
+        <span class="label">Score</span>
+        <span class="value" id="score">0</span>
+      </div>
+      <div class="stat">
+        <span class="label">Time</span>
+        <span class="value" id="time">30</span>
+      </div>
+    </header>
 
-      <main id="playfield" aria-label="Playfield" role="application">
-        <button id="startBtn" class="primary">Tap to Start</button>
-        <div id="dot" aria-label="Target" role="button" tabindex="0" hidden></div>
-      </main>
+    <main id="playfield" aria-label="Playfield">
+      <button id="startBtn" class="btn">Tap to Start</button>
+      <div id="dot" aria-label="Target dot" role="button" tabindex="0"></div>
+    </main>
 
-      <footer class="bottom-bar">
-        <div class="best">Best: <span id="best">0</span></div>
-        <button id="resetBest" class="ghost" aria-label="Reset best score">Reset Best</button>
-      </footer>
-    </div>
+    <footer class="bottom-bar">
+      <div class="best">Best: <span id="best">0</span></div>
+      <button id="resetBest" class="btn-secondary">Reset Best</button>
+    </footer>
+  </div>
 
-    <script src="script.js" defer></script>
-  </body>
+  <!-- chemin corrigé -->
+  <script src="tap-the-dot/script.js" defer></script>
+</body>
 </html>
-<!-- rebuild -->
